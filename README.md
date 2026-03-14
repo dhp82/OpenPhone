@@ -48,21 +48,13 @@
     <p style="color: rgba(255,255,255,0.95); margin: 0 0 16px 0; font-size: 15px; line-height: 1.7;">
       <strong>PhoneClaw</strong> is a tireless AI phone butler that handles any iOS task for you — and <em>gets smarter with every session</em>. Powered by the <strong>Ralph Loop</strong> (<code style="background: rgba(255,255,255,0.18); padding: 2px 7px; border-radius: 4px;">EXECUTE → EVALUATE → FIX → REPEAT</code>), it breaks your request into subtasks, acts on your phone, checks whether each step succeeded, and automatically retries with the failure context — until the job is done.
     </p>
-    <p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 15px; line-height: 1.7;">
-      🧠 <strong>UserMemory</strong> — builds a persistent profile of who you are (name, city, habits, history) and injects it into every plan, so the butler truly knows its owner
-    </p>
-    <p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 15px; line-height: 1.7;">
-      📚 <strong>ExperienceLog</strong> — records app-specific navigation know-how (tap coords, failure patterns, timing) across sessions, auto-compacted into a lean, high-confidence knowledge base
-    </p>
-    <p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 15px; line-height: 1.7;">
-      ⚡ <strong>Memory-first answers</strong> — repeated questions are answered instantly from the profile with zero device interactions
-    </p>
-    <p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 15px; line-height: 1.7;">
-      🤖 <strong>Interactive daemon mode</strong> — connect once, accept unlimited tasks back-to-back; the screen stays on automatically
-    </p>
-    <p style="color: rgba(255,255,255,0.95); margin: 0 0 18px 0; font-size: 15px; line-height: 1.7;">
-      🎓 <strong>Learning mode</strong> — just operate your phone as usual while PhoneClaw watches; it captures screenshots at ~8 fps, detects your taps via computer vision, and distils your actions into reusable navigation lessons that are added to the ExperienceLog immediately
-    </p>
+    <ul style="color: rgba(255,255,255,0.95); margin: 0 0 18px 0; font-size: 15px; line-height: 1.7; padding-left: 20px;">
+      <li>🧠 <strong>UserMemory</strong> — builds a persistent profile of who you are (name, city, habits, history) and injects it into every plan, so the butler truly knows its owner</li>
+      <li>📚 <strong>ExperienceLog</strong> — records app-specific navigation know-how (tap coords, failure patterns, timing) across sessions, auto-compacted into a lean, high-confidence knowledge base</li>
+      <li>⚡ <strong>Memory-first answers</strong> — repeated questions are answered instantly from the profile with zero device interactions</li>
+      <li>🤖 <strong>Interactive daemon mode</strong> — connect once, accept unlimited tasks back-to-back; the screen stays on automatically</li>
+      <li>🎓 <strong>Learning mode</strong> — just operate your phone as usual while PhoneClaw watches; it captures screenshots at ~8 fps, detects your taps via computer vision, and distils your actions into reusable navigation lessons that are added to the ExperienceLog immediately</li>
+    </ul>
     <p style="margin: 0; text-align: center;">
       <a href="./PhoneClaw/README.md" style="color: #1a1a2e; background: white; padding: 8px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px; display: inline-block;">📖 PhoneClaw Full Documentation →</a>
       &nbsp;&nbsp;
