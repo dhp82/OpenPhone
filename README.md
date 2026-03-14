@@ -43,11 +43,21 @@
 </div>
 
 <div align="center">
-  <div style="background: linear-gradient(135deg, #00d9ff 0%, #0099cc 100%); border-radius: 10px; padding: 20px; margin: 20px 0; border: 2px solid #00d9ff;">
-    <h3 style="color: white; margin: 0 0 10px 0;">🆕 Latest Update: iOS Agent Application Support!</h3>
-    <p style="color: white; margin: 0; font-size: 16px;">
-      We now support <strong>iOS platform</strong>! The framework enables automated email summarization tasks on iOS devices through lightweight on-device models. Implemented in the <code style="background: rgba(255,255,255,0.2); padding: 2px 6px; border-radius: 4px;">ios_agent/</code> directory, built on our open-source GUI agent model and <strong>Qwen3-VL-4B-Instruct</strong>. 
-      <a href="./ios_agent/README.md" style="color: #ffff00; text-decoration: underline;">See iOS Agent README →</a>
+  <div style="background: linear-gradient(135deg, #f953c6 0%, #b91d73 100%); border-radius: 15px; padding: 28px; margin: 20px 0; border: 2px solid #f953c6; box-shadow: 0 4px 24px rgba(249,83,198,0.25);">
+    <h2 style="color: white; margin: 0 0 14px 0; font-size: 22px;">🦾 New Release: PhoneClaw — Self-Learning iOS GUI Agent</h2>
+    <p style="color: rgba(255,255,255,0.95); margin: 0 0 14px 0; font-size: 15px; line-height: 1.7;">
+      <strong>PhoneClaw</strong> is an autonomous iOS agent that <em>gets smarter with every session</em>. Powered by the <strong>Ralph Loop</strong> methodology (<code style="background: rgba(255,255,255,0.18); padding: 2px 7px; border-radius: 4px;">EXECUTE → EVALUATE → FIX → REPEAT</code>), it plans tasks into subtasks, executes them on real iOS devices via WebDriverAgent, evaluates each result against success criteria, and automatically retries with failure context — until the job is done.
+    </p>
+    <p style="color: rgba(255,255,255,0.95); margin: 0 0 18px 0; font-size: 15px; line-height: 1.8;">
+      🧠 <strong>UserMemory</strong> — builds a persistent user profile (name, location, habits, task history) that is injected into every plan, so the agent truly knows its user &nbsp;·&nbsp;
+      📚 <strong>ExperienceLog</strong> — accumulates app-specific navigation lessons (coordinates, failure patterns, timing), automatically compacted and deduplicated across sessions &nbsp;·&nbsp;
+      ⚡ <strong>Memory-first retrieval</strong> — answers repeated questions instantly from the profile with zero device interactions &nbsp;·&nbsp;
+      🤖 <strong>Interactive daemon mode</strong> — connect once, accept unlimited tasks, device screen stays on automatically
+    </p>
+    <p style="margin: 0;">
+      <a href="./PhoneClaw/README.md" style="color: #1a1a2e; background: white; padding: 8px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px; display: inline-block;">📖 PhoneClaw Full Documentation →</a>
+      &nbsp;&nbsp;
+      <a href="./ios_agent/README.md" style="color: white; background: rgba(255,255,255,0.18); padding: 8px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px; border: 1px solid rgba(255,255,255,0.4); display: inline-block;">iOS Agent README →</a>
     </p>
   </div>
 </div>
@@ -85,6 +95,17 @@ Considering the compute limitations of today’s edge devices, models with **≤
 - **Privacy-First**: Enables phone tasks to run entirely on-device, preserving user privacy while eliminating network dependencies.
 - **Cost Savings**: Local processing eliminates expensive cloud APIs and per-request charges for sustainable operation.
 
+### 🦾 PhoneClaw: Self-Learning iOS GUI Agent
+An autonomous iOS GUI agent built on the **Ralph Loop** — a closed-loop execution methodology that runs until every subtask passes its success criteria. The key differentiator is a **two-layer self-learning memory** that makes the agent measurably smarter after each session:
+
+- **UserMemory** — Maintains a persistent user profile (inferred name, city, app habits, task history) injected into every planning prompt, so the agent makes contextually intelligent decisions from the very first step. Repeated questions are answered directly from memory with **zero device interactions**.
+- **ExperienceLog** — Records app-specific navigation knowledge per session: successful tap coordinates, failure patterns, UI timing quirks. Lessons are semantically deduplicated, reinforced on confirmation, and automatically compacted when an app accumulates ≥ 20 entries — keeping the knowledge base lean and high-quality.
+- **Intelligent Planning**: VLM decomposes each task into subtasks with explicit success criteria, enabling precise per-step evaluation and targeted retries rather than blind repetition.
+- **Interactive Daemon Mode**: Connect once, accept unlimited tasks indefinitely — the device screen stays on automatically throughout the session.
+- **Learning Mode**: Record your own manual device demos; PhoneClaw watches, annotates tap positions via computer vision, and extracts reusable lessons directly into the ExperienceLog.
+
+➜ [Full PhoneClaw documentation](./PhoneClaw/README.md)
+
 ---
 
 ## 🚀 Model Release & Resources
@@ -108,6 +129,7 @@ Considering the compute limitations of today’s edge devices, models with **≤
   - [💡 Research Highlights](#-research-highlights)
     - [🔍 OpenPhone‑3B: Lightweight Agentic Model](#-openphone3b-lightweight-agentic-model)
     - [Why 3B is the Sweet Spot for Phone Agents](#why-3b-is-the-sweet-spot-for-phone-agents)
+    - [🦾 PhoneClaw: Self-Learning iOS GUI Agent](#-phoneclaw-self-learning-ios-gui-agent)
   - [🚀 Model Release \& Resources](#-model-release--resources)
     - [📦 Ready-to-Deploy Model](#-ready-to-deploy-model)
     - [🛠️ Complete Training Pipeline](#️-complete-training-pipeline)
