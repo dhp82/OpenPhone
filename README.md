@@ -42,9 +42,9 @@
   <div style="width: 100%; height: 2px; margin: 20px 0; background: linear-gradient(90deg, transparent, #00d9ff, transparent);"></div>
 </div>
 
-<div align="center">
+<div>
   <div style="background: linear-gradient(135deg, #f953c6 0%, #b91d73 100%); border-radius: 15px; padding: 28px; margin: 20px 0; border: 2px solid #f953c6; box-shadow: 0 4px 24px rgba(249,83,198,0.25); text-align: left;">
-    <h2 style="color: white; margin: 0 0 14px 0; font-size: 22px; text-align: center;">🦾 New Release: PhoneClaw — Your Autonomous AI Butler for iPhone</h2>
+    <h2 style="color: white; margin: 0 0 14px 0; font-size: 22px; text-align: left;">🦾 New Release: PhoneClaw — Your Autonomous AI Butler for iPhone</h2>
     <p style="color: rgba(255,255,255,0.95); margin: 0 0 16px 0; font-size: 15px; line-height: 1.7;">
       <strong>PhoneClaw</strong> is a tireless AI phone butler that handles any iOS task for you — and <em>gets smarter with every session</em>. Powered by the <strong>Ralph Loop</strong> (<code style="background: rgba(255,255,255,0.18); padding: 2px 7px; border-radius: 4px;">EXECUTE → EVALUATE → FIX → REPEAT</code>), it breaks your request into subtasks, acts on your phone, checks whether each step succeeded, and automatically retries with the failure context — until the job is done.
     </p>
